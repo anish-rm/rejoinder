@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='silo.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+       
+        <div class="content2">
+            <div class="header2">
+                <h4  style="font-size: 35px;
+                color: #fffffe;">OTP will be sent to your mail</h4>
+            </div>
+           
+            <p>If not received, click resend </p>
+
+            <a href="login.html" class="btn2">Resend OTP</a>
+        </div>
+
+            <div class="login">
+                <div class="header">
+                    <h1>Enter OTP</h1>
+                </div>
+                <form action="" class="myform2" method="post">
+                    <div class="name">
+                        {{form.recieved_otp(size=30, placeholder="Enter OTP", class="mail2i")}}
+                    </div>
+                  <br>
+                        {{form.submit(class="btn")}}
+                     <br><br><br><br><br><br>      
+                </form>
+            </div>
+            
+        
+       
+    </div>
+    
+</body>
+</html>

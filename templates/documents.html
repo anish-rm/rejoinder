@@ -1,0 +1,157 @@
+{%extends "base.html"%}
+{%block content%}
+
+<section class="dashboard">
+  <div class="top">
+      <i class="uil uil-bars sidebar-toggle" style="color: #2b2c34;"></i>
+      <i class="uil uil-bell" style="margin-left: 750px;
+font-size: 28px; color: #2b2c34;"></i>
+      <i class="uil uil-user" style="margin-left: 10px;
+font-size: 25px; color: #2b2c34;"></i>
+      <div class="search-box">
+
+          <i class="uil uil-search"></i>
+          <input type="text" placeholder="Search here...">
+      </div>
+
+      <!--<img src="images/profile.jpg" alt="">-->
+  </div>
+
+  <div class="dash-content">
+      <!-- <div class="overview">
+          <div class="title">
+              <i class="uil uil-tachometer-fast-alt"></i>
+              <span class="text">Dashboard</span>
+          </div>
+
+          <div class="boxes">
+              <div class="box box1">
+                  <i class="uil uil-thumbs-up"></i>
+                  <span class="text">Total Likes</span>
+                  <span class="number">50,120</span>
+              </div>
+              <div class="box box2">
+                  <i class="uil uil-comments"></i>
+                  <span class="text">Comments</span>
+                  <span class="number">20,120</span>
+              </div>
+              <div class="box box3">
+                  <i class="uil uil-share"></i>
+                  <span class="text">Total Share</span>
+                  <span class="number">10,120</span>
+              </div>
+          </div>
+      </div> -->
+      <div class="kyc">
+          <div class="khead">
+              <h1 style="text-align: center; margin-bottom:
+30px; margin-top: 30px;">Send Your Documents</h1>
+          </div>
+          <form action="" method="post" enctype="multipart/form-data">
+          <div class="input-group mb-3">
+            {{dform.email(size=30, class="form-control", placeholder="Enter Mail Id...")}}
+          </div>
+          <br>
+            <div class="input-group mb-3">
+              
+              {{dform.upfile(class="form-control", id="inputGroupFile02")}}
+              <label class="input-group-text" for="inputGroupFile02">Upload</label>
+          </div>
+           <br>
+
+            <div class="input-group mb-3">
+              <!-- <span class="input-group-text"
+id="basic-addon1">@</span> -->
+              
+              {{dform.datetime(size=30, class="form-control")}}
+            </div>
+            <br>
+            <div class="input-group" style="margin-bottom: 30px;">
+                  <!-- <span class="input-group-text">With
+textarea</span> -->
+                  {{dform.textarea(size=30, class="form-control", placeholder="Enter Message...", rows="4")}}
+              </div>
+
+
+              <br>
+              <button type="button" class="btn1">Back</button>
+              <button type="button" class="btn1">Schedule</button>
+              {{dform.sendotp(class="btn1")}}
+            </form>
+      </div>
+
+
+
+      <!-- <div class="activity">
+          <div class="title">
+              <i class="uil uil-clock-three"></i>
+              <span class="text">Recent Activity</span>
+          </div>
+
+          <div class="activity-data">
+              <div class="data names">
+                  <span class="data-title">Name</span>
+                  <span class="data-list">Prem Shahi</span>
+                  <span class="data-list">Deepa Chand</span>
+                  <span class="data-list">Manisha Chand</span>
+                  <span class="data-list">Pratima Shahi</span>
+                  <span class="data-list">Man Shahi</span>
+                  <span class="data-list">Ganesh Chand</span>
+                  <span class="data-list">Bikash Chand</span>
+              </div>
+              <div class="data email">
+                  <span class="data-title">Email</span>
+                  <span class="data-list">premshahi@gmail.com</span>
+                  <span class="data-list">deepachand@gmail.com</span>
+                  <span class="data-list">prakashhai@gmail.com</span>
+                  <span class="data-list">manishachand@gmail.com</span>
+                  <span class="data-list">pratimashhai@gmail.com</span>
+                  <span class="data-list">manshahi@gmail.com</span>
+                  <span class="data-list">ganeshchand@gmail.com</span>
+              </div>
+              <div class="data joined">
+                  <span class="data-title">Joined</span>
+                  <span class="data-list">2022-02-12</span>
+                  <span class="data-list">2022-02-12</span>
+                  <span class="data-list">2022-02-13</span>
+                  <span class="data-list">2022-02-13</span>
+                  <span class="data-list">2022-02-14</span>
+                  <span class="data-list">2022-02-14</span>
+                  <span class="data-list">2022-02-15</span>
+              </div>
+              <div class="data type">
+                  <span class="data-title">Type</span>
+                  <span class="data-list">New</span>
+                  <span class="data-list">Member</span>
+                  <span class="data-list">Member</span>
+                  <span class="data-list">New</span>
+                  <span class="data-list">Member</span>
+                  <span class="data-list">New</span>
+                  <span class="data-list">Member</span>
+              </div>
+              <div class="data status">
+                  <span class="data-title">Status</span>
+                  <span class="data-list">Liked</span>
+                  <span class="data-list">Liked</span>
+                  <span class="data-list">Liked</span>
+                  <span class="data-list">Liked</span>
+                  <span class="data-list">Liked</span>
+                  <span class="data-list">Liked</span>
+                  <span class="data-list">Liked</span>
+              </div>
+          </div>
+      </div> -->
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+crossorigin="anonymous"></script>
+
+<script src="script.js"></script>
+
+
+{%endblock%}

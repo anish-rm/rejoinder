@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+     
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title>REJOINDER</title> 
+</head>
+<body>
+    <nav style="background-color: #6246ea; color: #fffffe; padding-right: 50px;">
+        <div class="logo-name">
+            <div class="logo-image">
+                <!--<img src="images/logo.png" alt="">-->
+            </div>
+
+            <span class="logo_name" style="margin-top: 1px;margin-left: -5px; font-size: 30px;">Rejoinder</span>
+        </div>
+
+        <div class="menu-items" >
+            <ul class="nav-links" style="color: #fffffe;">
+                <li><a href="/dashboard">
+                    <i class="uil uil-estate"></i>
+                    <span class="link-name">Dashboard</span>
+                </a></li>
+                <li><a href="/newsfeed">
+                    <i class="uil uil-newspaper"></i>
+                    <span class="link-name">NewsFeed</span>
+                </a></li>
+                <li><a href="/inbox">
+                    <i class="uil uil-envelope-download"></i>
+                    <span class="link-name">Inbox(Recieved)</span>
+                </a></li>
+                <li><a href="/outbox">
+                    <i class="uil uil-file-share-alt"></i>
+                    <span class="link-name">OutBox(Shared)</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-file-medical"></i>
+                    <span class="link-name">Medicals</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-book-alt"></i>
+                    <span class="link-name">Education</span>
+                </a></li>
+                <li><a href="/documents">
+                    <i class="uil uil-document-info"></i>
+                    <span class="link-name">Documents</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-database-alt"></i>
+                    <span class="link-name">Gatherings</span>
+                </a></li>
+                
+            </ul>
+            
+            <ul class="logout-mode">
+                <li><a href="/logout">
+                    <i class="uil uil-signout"></i>
+                    <span class="link-name">Logout</span>
+                </a></li>
+
+                <li class="mode">
+                    <a href="#">
+                        <i class="uil uil-moon"></i>
+                    <span class="link-name">Dark Mode</span>
+                </a>
+
+                <div class="mode-toggle">
+                  <span class="switch"></span>
+                </div>
+            </li>
+            </ul>
+        </div>
+    </nav>
+    {%block content%}{%endblock%}
+</body>
+</html>

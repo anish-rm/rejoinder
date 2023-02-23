@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+body{
+    background: #fffffe;
+    width: 70%;
+    margin: auto;
+    padding-top: 150px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login{
+    background: #d1d1e9;
+    padding: 50px;
+    width: 35%;
+}
+
+.header{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.header h1{
+    font-size: 45px;
+    color: #33272a;
+}
+
+.myform{
+    text-align: center;
+}
+
+.mail{
+    padding: 15px;
+}
+
+.maili{
+    width: 80%;
+    background: #fffffe;
+    padding: 10px 5px;
+    border: none;
+}
+.passi{
+    width: 74%;
+    background:  #fffffe;
+    padding: 10px 5px;
+    border: none;
+}
+
+.forget{
+    margin: 20px;
+}
+
+.forget a{
+    text-decoration: none;
+    color: #594a4e;
+}
+
+.btn{
+    padding: 10px 30px;
+    background: #6246ea;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #33272a;
+    
+}
+.btn2{
+    padding: 13px 30px;
+    background: #d1d1e9;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #33272a;
+    
+}
+
+.content{
+    background: #6246ea;
+    padding: 109.5px 50px;
+    width: 35%;
+    text-align: center;
+}
+
+.header2{
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.header2 h1{
+    font-size: 45px;
+    color: #fffffe;
+}
+.content p{
+    padding: 10px;
+    text-align: center;
+    color: #fffffe;
+    margin-bottom: 22px;
+}
+
+.name{
+    display: flex;
+    /* padding-right: 10px; */
+    /* padding-left: 10px; */
+    justify-content: space-between;
+}
+
+.namei{
+    /* margin: 0 10px; */
+    width: 80%;
+    background: #fffffe;
+    padding: 10px 5px;
+    border: none;
+}
+
+.myform2{
+    text-align: center;
+
+}
+
+.mail2i{
+    margin-left: -6px;
+    width: 100%;
+    background: #fffffe;
+    padding: 10px 5px;
+    border: none;
+}
+.pass2i{
+    margin-left: -3.5px;
+    width: 92%;
+    background: #fffffe;
+    padding: 10px 5px;
+    border: none;
+}
+
+.content2{
+    background: #6246ea;
+    padding: 136px 50px;
+    width: 35%;
+    text-align: center;
+    
+}
+
+.content2 p{
+    padding: 10px;
+    text-align: center;
+    color: #fffffe;
+    margin-bottom: 13px;
+}
+
+.log{
+    display: none;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='silo.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container sign">
+       
+            <div class="login">
+                <div class="header">
+                    <h1>Log In</h1>
+                </div>
+                <form action="" class="myform", method="post">
+                    <div class="mail">
+                        {{fm.email(size=30, class="mail2i", placeholder="Email Address")}}
+                    </div>
+                    <div class="pass">
+                        {{fm.password(size=30, class="pass2i", placeholder="Password")}}
+                    </div>
+                    <div class="forget">
+                        <a href="http://">Forgot your password?</a>
+                    </div>
+    
+                    {{fm.login(class="btn")}}
+    
+                </form>
+            </div>
+            <div class="content">
+                <div class="header2">
+                    <h1>Hi There!</h1>
+                </div>
+                <p>Enter your details to open an account with us</p>
+                <!-- <input type="submit" value="Sign Up" class="btn su"> -->
+                <a href="/signup" class="btn2 s1">Sign Up</a>
+            </div>
+        
+       
+    </div>
+    
+</body>
+</html>

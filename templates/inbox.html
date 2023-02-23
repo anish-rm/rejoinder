@@ -1,0 +1,85 @@
+{%extends "base.html"%}
+{%block content%}
+
+    <section class="dashboard">
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle" style="color: #2b2c34;"></i>
+            <i class="uil uil-bell" style="margin-left: 750px; font-size: 28px; color: #2b2c34;"></i>
+            <i class="uil uil-user" style="margin-left: 10px; font-size: 25px; color: #2b2c34;"></i>
+            <div class="search-box">
+                
+                <i class="uil uil-search"></i>
+                <input type="text" placeholder="Search here...">
+            </div>
+            
+            <!--<img src="images/profile.jpg" alt="">-->
+        </div>
+<div class="content-3">
+        <div class="dash-content">
+            <!-- <div class="overview">
+                <div class="title">
+                    <i class="uil uil-tachometer-fast-alt"></i>
+                    <span class="text">Dashboard</span>
+                </div>
+
+                <div class="boxes">
+                    <div class="box box1">
+                        <i class="uil uil-thumbs-up"></i>
+                        <span class="text">Total Likes</span>
+                        <span class="number">50,120</span>
+                    </div>
+                    <div class="box box2">
+                        <i class="uil uil-comments"></i>
+                        <span class="text">Comments</span>
+                        <span class="number">20,120</span>
+                    </div>
+                    <div class="box box3">
+                        <i class="uil uil-share"></i>
+                        <span class="text">Total Share</span>
+                        <span class="number">10,120</span>
+                    </div>
+                </div>
+            </div> -->
+            <div class="kyc">
+                <div class="khead">
+                    <p>Page No: <button type="button" class="btn btn-primary" style="width:5px;height:25px">1</button></p>
+              {%for i in indata%}
+                </div>                
+                      <div class="row">
+                        <div class="col-xl-12"> 
+                          <div class="card">
+                            <div class="card-content">
+                              <div class="card-body">                               
+                                  <div class="media-body">
+                                    <h6 style="text-align:right;color: green;">Active</h6>
+                                    <p><i class="fa-solid fa-user"> </i>  From: </p>
+                                    <h5>{{i[1]}}</h5>                                   
+                                    <p><i class="fa-solid fa-thumbs-up"> </i>  Recived on : {{i[2]}}</p>
+                                    <p><i class="fa-solid fa-file"></i>  File: {{i[0]}}</p>           
+                                    <form action = "" method="post">
+                                        <input type="hidden" name="out" value="{{i[1]}}">
+                                        <input type="hidden" name="file_name" value="{{i[0]}}">                         
+                                    {{form.download(class="btn btn-outline-secondary")}}
+                                    </form>
+                                    <button type="button" class="btn btn-outline-danger">Close</button>                                                           
+                                    <button type="button" class="btn btn-outline-info">History</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                <br>
+                {%endfor%}
+            </div>
+                 
+        </div>
+    </section>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+{%endblock%}
